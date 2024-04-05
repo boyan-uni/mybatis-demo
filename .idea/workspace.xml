@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1767ee77-fa09-4a8c-ae09-47baf84df5ee" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/boyan/JDBCTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/boyan/MybatisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/boyan/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/MyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+    <list default="true" id="1767ee77-fa09-4a8c-ae09-47baf84df5ee" name="更改" comment="v1.0 - MybatisTest.java 测试成功">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/JDBCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/MybatisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/MyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/MyMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +57,7 @@
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true",
     "应用程序.JDBCTest.executor": "Run",
-    "应用程序.MybatisTest.executor": "Run"
+    "应用程序.MybatisTest.executor": "Debug"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -70,13 +65,18 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
   <component name="RunManager" selected="应用程序.MybatisTest">
     <configuration name="JDBCTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.boyan.JDBCTest" />
+      <option name="MAIN_CLASS_NAME" value="com.boyan.mybatis.JDBCTest" />
       <module name="mybatis-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.boyan.*" />
+          <option name="PATTERN" value="com.boyan.mybatis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,11 +85,11 @@
       </method>
     </configuration>
     <configuration name="MybatisTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.boyan.MybatisTest" />
+      <option name="MAIN_CLASS_NAME" value="com.boyan.mybatis.MybatisTest" />
       <module name="mybatis-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.boyan.*" />
+          <option name="PATTERN" value="com.boyan.mybatis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,8 +119,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712276119381</updated>
-      <workItem from="1712276120453" duration="7734000" />
+      <workItem from="1712276120453" duration="8837000" />
     </task>
+    <task id="LOCAL-00001" summary="v1.0 - MybatisTest.java 测试成功">
+      <option name="closed" value="true" />
+      <created>1712331593826</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712331593826</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,5 +137,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="v1.0 - MybatisTest.java 测试成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0 - MybatisTest.java 测试成功" />
   </component>
 </project>

@@ -8,7 +8,19 @@
     <!-- statement，内容：sql语句。id：唯一标识，随便写，在同一个命名空间下保持唯一
        resultType：sql语句查询结果集的封装类型,tb_user即为数据库中的表
      -->
-    <select id="selectUser" resultType="com.boyan.User">
-        select * from tb_user where id = #{id}
+    <select id="selectUser" resultType="com.boyan.mybatis.User">
+        select
+            tuser.id as id,
+            tuser.user_name as userName,
+            tuser.password as password,
+            tuser.name as name,
+            tuser.age as age,
+            tuser.birthday as birthday,
+            tuser.sex as sex,
+            tuser.created as created,
+            tuser.updated as updated
+        from
+            tb_user tuser
+        where tuser.id = #{id};
     </select>
 </mapper>
