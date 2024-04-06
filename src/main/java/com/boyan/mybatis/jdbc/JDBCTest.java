@@ -1,4 +1,4 @@
-package com.boyan.mybatis;
+package com.boyan.mybatis.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

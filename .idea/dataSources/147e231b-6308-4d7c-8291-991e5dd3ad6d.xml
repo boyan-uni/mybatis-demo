@@ -759,7 +759,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="228" parent="1" name="ssmdemo">
-      <LastIntrospectionLocalTimestamp>2024-04-05.01:09:28</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-04-06.14:41:43</LastIntrospectionLocalTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="229" parent="1" name="sys">
@@ -779,8 +779,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8_general_ci</CollationName>
     </table>
     <column id="234" parent="233" name="id">
-      <AutoIncrement>3</AutoIncrement>
-      <DasType>int(9)|0s</DasType>
+      <DasType>char(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>

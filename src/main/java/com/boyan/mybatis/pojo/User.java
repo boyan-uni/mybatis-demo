@@ -1,11 +1,11 @@
-package com.boyan.mybatis;
+package com.boyan.mybatis.pojo;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class User {
 
-  private long id;
+  private String id;
   private String userName;
   private String password;
   private String name;
@@ -15,11 +15,11 @@ public class User {
   private String created;
   private String updated;
 
-  public long getId() {
+  public String getId() {
     return id;
   }
 
-  public void setId(long id) {
+  public void setId(String id) {
     this.id = id;
   }
 

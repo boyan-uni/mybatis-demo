@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1767ee77-fa09-4a8c-ae09-47baf84df5ee" name="更改" comment="v1.0 - MybatisTest.java 测试成功">
+    <list default="true" id="1767ee77-fa09-4a8c-ae09-47baf84df5ee" name="更改" comment="v1.1 - MybatisTest.java 解决数据库字段名和实体类属性名不一致的问题">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/boyan/mybatis/dao/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/147e231b-6308-4d7c-8291-991e5dd3ad6d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/147e231b-6308-4d7c-8291-991e5dd3ad6d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/JDBCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/MybatisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/jdbc/JDBCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/mybatis/MybatisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/pojo/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/MyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/MyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -40,9 +49,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.UserDaoTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -57,7 +69,7 @@
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true",
     "应用程序.JDBCTest.executor": "Run",
-    "应用程序.MybatisTest.executor": "Debug"
+    "应用程序.MybatisTest.executor": "Run"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -69,14 +81,20 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.boyan.mybatis.dao" />
+    </key>
   </component>
-  <component name="RunManager" selected="应用程序.MybatisTest">
+  <component name="RunManager" selected="JUnit.UserDaoTest">
     <configuration name="JDBCTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.boyan.mybatis.JDBCTest" />
+      <option name="MAIN_CLASS_NAME" value="com.boyan.mybatis.jdbc.JDBCTest" />
       <module name="mybatis-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.boyan.mybatis.*" />
+          <option name="PATTERN" value="com.boyan.mybatis.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,11 +103,11 @@
       </method>
     </configuration>
     <configuration name="MybatisTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.boyan.mybatis.MybatisTest" />
+      <option name="MAIN_CLASS_NAME" value="com.boyan.mybatis.mybatis.MybatisTest" />
       <module name="mybatis-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.boyan.mybatis.*" />
+          <option name="PATTERN" value="com.boyan.mybatis.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,8 +115,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.boyan.mybatis.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.boyan.mybatis.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.boyan.mybatis.dao.UserDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="应用程序.MybatisTest" />
         <item itemvalue="应用程序.JDBCTest" />
       </list>
@@ -119,7 +153,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712276119381</updated>
-      <workItem from="1712276120453" duration="8837000" />
+      <workItem from="1712276120453" duration="21453000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0 - MybatisTest.java 测试成功">
       <option name="closed" value="true" />
@@ -129,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712331593826</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v1.1 - MybatisTest.java 解决数据库字段名和实体类属性名不一致的问题">
+      <option name="closed" value="true" />
+      <created>1712350101592</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712350101592</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +181,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="v1.0 - MybatisTest.java 测试成功" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.0 - MybatisTest.java 测试成功" />
+    <MESSAGE value="v1.1 - MybatisTest.java 解决数据库字段名和实体类属性名不一致的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.1 - MybatisTest.java 解决数据库字段名和实体类属性名不一致的问题" />
   </component>
 </project>

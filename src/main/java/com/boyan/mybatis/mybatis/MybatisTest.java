@@ -1,5 +1,6 @@
-package com.boyan.mybatis;
+package com.boyan.mybatis.mybatis;
 
+import com.boyan.mybatis.pojo.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;

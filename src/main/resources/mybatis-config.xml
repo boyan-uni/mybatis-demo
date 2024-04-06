@@ -38,8 +38,9 @@
         </environment>
     </environments>
 
-    <!-- 在全局配置文件中，添加 MyMapper.xml 文件配置-->
+    <!-- 在全局配置文件中，配置 mapper 资源-->
     <mappers>
         <mapper resource="mappers/MyMapper.xml"/>
+        <mapper resource="mappers/UserDaoMapper.xml"/>
     </mappers>
 </configuration>
