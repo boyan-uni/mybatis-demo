@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1767ee77-fa09-4a8c-ae09-47baf84df5ee" name="更改" comment="v1.1 - MybatisTest.java 解决数据库字段名和实体类属性名不一致的问题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/boyan/mybatis/dao/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/147e231b-6308-4d7c-8291-991e5dd3ad6d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/147e231b-6308-4d7c-8291-991e5dd3ad6d.xml" afterDir="false" />
+    <list default="true" id="1767ee77-fa09-4a8c-ae09-47baf84df5ee" name="更改" comment="v2.0 - User-CRUD 实现（各层：Dao-DaoImpl-Mapper-DaoTest-Mysql)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/boyan/mybatis/dao/UserMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/jdbc/JDBCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/mybatis/MybatisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/MyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/MyMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/boyan/mybatis/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/boyan/mybatis/dao/UserDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
         <option value="JUnit4 Test Class" />
       </list>
     </option>
@@ -50,6 +44,8 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "JUnit.UserDaoTest.executor": "Run",
+    "JUnit.UserMapperTest.executor": "Run",
+    "JUnit.UserMapperTest.testUpdateUser.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -88,7 +84,7 @@
       <recent name="com.boyan.mybatis.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest">
+  <component name="RunManager" selected="JUnit.UserMapperTest">
     <configuration name="JDBCTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.boyan.mybatis.jdbc.JDBCTest" />
       <module name="mybatis-demo" />
@@ -130,8 +126,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.boyan.mybatis.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.boyan.mybatis.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.boyan.mybatis.dao.UserMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.testUpdateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.boyan.mybatis.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.boyan.mybatis.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.boyan.mybatis.dao.UserMapperTest" />
+      <option name="METHOD_NAME" value="testUpdateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserMapperTest" />
+        <item itemvalue="JUnit.UserMapperTest.testUpdateUser" />
         <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="应用程序.MybatisTest" />
         <item itemvalue="应用程序.JDBCTest" />
@@ -153,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712276119381</updated>
-      <workItem from="1712276120453" duration="21453000" />
+      <workItem from="1712276120453" duration="25310000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0 - MybatisTest.java 测试成功">
       <option name="closed" value="true" />
@@ -171,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712350101592</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="v2.0 - User-CRUD 实现（各层：Dao-DaoImpl-Mapper-DaoTest-Mysql)">
+      <option name="closed" value="true" />
+      <created>1712421006136</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712421006136</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +219,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="v1.0 - MybatisTest.java 测试成功" />
     <MESSAGE value="v1.1 - MybatisTest.java 解决数据库字段名和实体类属性名不一致的问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.1 - MybatisTest.java 解决数据库字段名和实体类属性名不一致的问题" />
+    <MESSAGE value="v2.0 - User-CRUD 实现（各层：Dao-DaoImpl-Mapper-DaoTest-Mysql)" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.0 - User-CRUD 实现（各层：Dao-DaoImpl-Mapper-DaoTest-Mysql)" />
   </component>
 </project>

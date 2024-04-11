@@ -14,8 +14,6 @@ import java.io.InputStream;
 import java.util.Date;
 import java.util.List;
 
-import static org.junit.Assert.*;
-
 /**
  * UserDao interface 接口的测试类
  */
