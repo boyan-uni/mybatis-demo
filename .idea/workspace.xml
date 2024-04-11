@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1767ee77-fa09-4a8c-ae09-47baf84df5ee" name="更改" comment="v2.0 - User-CRUD 实现（各层：Dao-DaoImpl-Mapper-DaoTest-Mysql)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/dao/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/boyan/mybatis/dao/UserMapperTest.java" afterDir="false" />
+    <list default="true" id="1767ee77-fa09-4a8c-ae09-47baf84df5ee" name="更改" comment="v3.0 - 动态代理改造CRUD 实现（各层：Dao-Mapper-MapperTest-Mysql)">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/boyan/mybatis/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/boyan/mybatis/dao/UserDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +24,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
@@ -182,7 +181,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712276119381</updated>
-      <workItem from="1712276120453" duration="25310000" />
+      <workItem from="1712276120453" duration="26234000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0 - MybatisTest.java 测试成功">
       <option name="closed" value="true" />
@@ -208,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712421006136</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="v3.0 - 动态代理改造CRUD 实现（各层：Dao-Mapper-MapperTest-Mysql)">
+      <option name="closed" value="true" />
+      <created>1712849265318</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712849265318</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +227,7 @@
     <MESSAGE value="v1.0 - MybatisTest.java 测试成功" />
     <MESSAGE value="v1.1 - MybatisTest.java 解决数据库字段名和实体类属性名不一致的问题" />
     <MESSAGE value="v2.0 - User-CRUD 实现（各层：Dao-DaoImpl-Mapper-DaoTest-Mysql)" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.0 - User-CRUD 实现（各层：Dao-DaoImpl-Mapper-DaoTest-Mysql)" />
+    <MESSAGE value="v3.0 - 动态代理改造CRUD 实现（各层：Dao-Mapper-MapperTest-Mysql)" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3.0 - 动态代理改造CRUD 实现（各层：Dao-Mapper-MapperTest-Mysql)" />
   </component>
 </project>
