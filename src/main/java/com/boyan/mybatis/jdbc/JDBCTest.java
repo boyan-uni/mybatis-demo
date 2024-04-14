@@ -20,7 +20,7 @@ public class JDBCTest {
             // 获取连接
             String url = "jdbc:mysql://localhost:3306/ssmdemo";
             String user = "root";
-            String password = "123456";
+            String password = "12345678";
             connection = DriverManager.getConnection(url, user, password);
             // 获取statement，preparedStatement
             String sql = "select * from tb_user where id=?";

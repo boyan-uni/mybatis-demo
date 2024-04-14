@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1767ee77-fa09-4a8c-ae09-47baf84df5ee" name="更改" comment="upload README.md&#10;(Mybatis-从入门到速成（实战篇）)">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="1767ee77-fa09-4a8c-ae09-47baf84df5ee" name="更改" comment="update mybatis-config.xml">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/147e231b-6308-4d7c-8291-991e5dd3ad6d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/147e231b-6308-4d7c-8291-991e5dd3ad6d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/jdbc/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boyan/mybatis/jdbc/JDBCTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +24,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="REBASE" />
+      </set>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -98,7 +105,7 @@
       <recent name="com.boyan.mybatis.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserMapperTest">
+  <component name="RunManager" selected="应用程序.JDBCTest">
     <configuration name="JDBCTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.boyan.mybatis.jdbc.JDBCTest" />
       <module name="mybatis-demo" />
@@ -173,6 +180,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.JDBCTest" />
         <item itemvalue="JUnit.UserMapperTest" />
         <item itemvalue="JUnit.UserMapperTest.testUpdateUser" />
         <item itemvalue="JUnit.UserDaoTest" />
@@ -198,6 +206,7 @@
       <workItem from="1712276120453" duration="26234000" />
       <workItem from="1713012912814" duration="494000" />
       <workItem from="1713024324106" duration="18000" />
+      <workItem from="1713025173526" duration="2141000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0 - MybatisTest.java 测试成功">
       <option name="closed" value="true" />
@@ -236,6 +245,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
