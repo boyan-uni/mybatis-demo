@@ -1,7 +1,7 @@
 
-# Mybatis-从入门到速成（实战篇）
+# Mybatis Tutorial
 
-参考文档：[Mybatis教程-实战看这一篇就够了 ](https://www.cnblogs.com/diffx/p/10611082.html)
+教程链接：[Mybatis教程-实战看这一篇就够了 ](https://www.cnblogs.com/diffx/p/10611082.html)
 
 ##  一. 新建项目JDBC测试
 
